@@ -6,7 +6,7 @@ class OpenWorkbenchCli < Formula
   # This URL should point to the source code tarball from your GitHub release
   url "https://github.com/jashkahar/open-workbench-cli/archive/refs/tags/v0.2.0.tar.gz"
   # You must update this sha256 hash for every new release!
-  sha256 "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2" # <-- Replace this!
+  sha256 "F77F3B00CAB8BB95E517BC26CBBF417BBAAC8180043ABF52D81467F8892984AF"
   license "MIT"
 
   # This tells Homebrew that Go is required to build the tool
