@@ -5,21 +5,21 @@
 class OpenWorkbenchCli < Formula
   desc "A powerful CLI for scaffolding modern web applications."
   homepage "https://github.com/jashkahar/open-workbench-cli"
-  version "0.5.0"
+  version "0.5.1"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/jashkahar/open-workbench-cli/releases/download/v0.5.0/open-workbench-cli_0.5.0_darwin_amd64.tar.gz"
-      sha256 "17ccf3bb3414bb24c95da64ec761e55166224bc025c9ef5d2dc727323306b6c9"
+      url "https://github.com/jashkahar/open-workbench-cli/releases/download/v0.5.1/open-workbench-cli_0.5.1_darwin_amd64.tar.gz"
+      sha256 "2c3d11d64cf098d07df7f42ae98193b63e9b8409b12f23aa5efbac3f4ed67ddb"
 
       def install
         bin.install "open-workbench-cli"
       end
     end
     on_arm do
-      url "https://github.com/jashkahar/open-workbench-cli/releases/download/v0.5.0/open-workbench-cli_0.5.0_darwin_arm64.tar.gz"
-      sha256 "c206b2b697f0bb8b5547d74c77795b3fda960b6aa1b86b959e4a63f2c4ddbe3a"
+      url "https://github.com/jashkahar/open-workbench-cli/releases/download/v0.5.1/open-workbench-cli_0.5.1_darwin_arm64.tar.gz"
+      sha256 "4ef7eac1dc0b22388eccba11609914cdd6c91df0382738fde15cd97ad4c75ae8"
 
       def install
         bin.install "open-workbench-cli"
@@ -30,8 +30,8 @@ class OpenWorkbenchCli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jashkahar/open-workbench-cli/releases/download/v0.5.0/open-workbench-cli_0.5.0_linux_amd64.tar.gz"
-        sha256 "697d35415255c9bef6201c286c1a457aa908f5ac66652739b92708be4b190b3f"
+        url "https://github.com/jashkahar/open-workbench-cli/releases/download/v0.5.1/open-workbench-cli_0.5.1_linux_amd64.tar.gz"
+        sha256 "3e39335878fa1511b3fad28392836055faa4c9565f8b7c54d9be12feb3a5a28d"
 
         def install
           bin.install "open-workbench-cli"
@@ -40,8 +40,8 @@ class OpenWorkbenchCli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jashkahar/open-workbench-cli/releases/download/v0.5.0/open-workbench-cli_0.5.0_linux_arm64.tar.gz"
-        sha256 "ab624395986430401480ece7164a573127811fac78dd011521e747284f4fe6a4"
+        url "https://github.com/jashkahar/open-workbench-cli/releases/download/v0.5.1/open-workbench-cli_0.5.1_linux_arm64.tar.gz"
+        sha256 "eafc3a4615d51207b1fc13add17907a874e8f009315c53ade46b8aecefecb3ee"
 
         def install
           bin.install "open-workbench-cli"
