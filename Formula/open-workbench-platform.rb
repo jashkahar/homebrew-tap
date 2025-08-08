@@ -5,24 +5,24 @@
 class OpenWorkbenchPlatform < Formula
   desc "A powerful CLI for scaffolding modern web applications."
   homepage "https://github.com/jashkahar/open-workbench-platform"
-  version "0.5.1"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/jashkahar/open-workbench-platform/releases/download/v0.5.1/open-workbench-platform_0.5.1_darwin_amd64.tar.gz"
-      sha256 "2c3d11d64cf098d07df7f42ae98193b63e9b8409b12f23aa5efbac3f4ed67ddb"
+      url "https://github.com/jashkahar/open-workbench-platform/releases/download/v0.6.0/open-workbench-platform_0.6.0_darwin_amd64.tar.gz"
+      sha256 "502e21f8b5ed3f8cf45fdd0ff91780657cf3dc280384acda38681f915bc15c89"
 
       def install
-        bin.install "open-workbench-platform"
+        bin.install "open-workbench-platform.exe"
       end
     end
     on_arm do
-      url "https://github.com/jashkahar/open-workbench-platform/releases/download/v0.5.1/open-workbench-platform_0.5.1_darwin_arm64.tar.gz"
-      sha256 "4ef7eac1dc0b22388eccba11609914cdd6c91df0382738fde15cd97ad4c75ae8"
+      url "https://github.com/jashkahar/open-workbench-platform/releases/download/v0.6.0/open-workbench-platform_0.6.0_darwin_arm64.tar.gz"
+      sha256 "d70024fd7057d1cae65947e76684f73e12fda48b4db03eb21bcc883b2bed7f18"
 
       def install
-        bin.install "open-workbench-platform"
+        bin.install "open-workbench-platform.exe"
       end
     end
   end
@@ -30,27 +30,27 @@ class OpenWorkbenchPlatform < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jashkahar/open-workbench-platform/releases/download/v0.5.1/open-workbench-platform_0.5.1_linux_amd64.tar.gz"
-        sha256 "3e39335878fa1511b3fad28392836055faa4c9565f8b7c54d9be12feb3a5a28d"
+        url "https://github.com/jashkahar/open-workbench-platform/releases/download/v0.6.0/open-workbench-platform_0.6.0_linux_amd64.tar.gz"
+        sha256 "8d29289fc5331bd89c37e46c9c1902db653e68168082033ac56350c4103b37f4"
 
         def install
-          bin.install "open-workbench-platform"
+          bin.install "open-workbench-platform.exe"
         end
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jashkahar/open-workbench-platform/releases/download/v0.5.1/open-workbench-platform_0.5.1_linux_arm64.tar.gz"
-        sha256 "eafc3a4615d51207b1fc13add17907a874e8f009315c53ade46b8aecefecb3ee"
+        url "https://github.com/jashkahar/open-workbench-platform/releases/download/v0.6.0/open-workbench-platform_0.6.0_linux_arm64.tar.gz"
+        sha256 "48576a35c68c4ec77a4ccf8e01898de18ae83323a9455ad7fce0bf8602d408e0"
 
         def install
-          bin.install "open-workbench-platform"
+          bin.install "open-workbench-platform.exe"
         end
       end
     end
   end
 
   test do
-    system "#{bin}/open-workbench-cli --version"
+    system "#{bin}/open-workbench-platform --version"
   end
 end
