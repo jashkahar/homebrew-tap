@@ -5,21 +5,21 @@
 class OpenWorkbenchPlatform < Formula
   desc "A powerful CLI for scaffolding modern web applications."
   homepage "https://github.com/jashkahar/open-workbench-platform"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/jashkahar/open-workbench-platform/releases/download/v0.6.0/om_0.6.0_darwin_amd64.tar.gz"
-      sha256 "89732bf8996d7efd979261bb73f78820f1c29a4fbb16e6d9fe7fe74f17c23f8f"
+      url "https://github.com/jashkahar/open-workbench-platform/releases/download/v0.6.1/om_0.6.1_darwin_amd64.tar.gz"
+      sha256 "3f400364c50e6b7fce5a9be6a5cc58ec43c8f3ddaf04f522021b29610af0e437"
 
       def install
         bin.install "om"
       end
     end
     on_arm do
-      url "https://github.com/jashkahar/open-workbench-platform/releases/download/v0.6.0/om_0.6.0_darwin_arm64.tar.gz"
-      sha256 "4b45a86ae809e0d08e584b4d8894e6c3f2cc7fdf18b9198c1e0cd9a39a8e7031"
+      url "https://github.com/jashkahar/open-workbench-platform/releases/download/v0.6.1/om_0.6.1_darwin_arm64.tar.gz"
+      sha256 "d6cb6c38b1dababc1ee68ca929d6a0e16e39b1ce4bea6d025b200022632852bb"
 
       def install
         bin.install "om"
@@ -30,8 +30,8 @@ class OpenWorkbenchPlatform < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jashkahar/open-workbench-platform/releases/download/v0.6.0/om_0.6.0_linux_amd64.tar.gz"
-        sha256 "41a92acc4b957954863d4b3c784e02ef2378e2afb1d581fd17ae7e68ef86efe6"
+        url "https://github.com/jashkahar/open-workbench-platform/releases/download/v0.6.1/om_0.6.1_linux_amd64.tar.gz"
+        sha256 "0ee6c7ec8a894f198132890e86da4e077bf34515baadb4f8cbbef15069647abe"
 
         def install
           bin.install "om"
@@ -40,8 +40,8 @@ class OpenWorkbenchPlatform < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jashkahar/open-workbench-platform/releases/download/v0.6.0/om_0.6.0_linux_arm64.tar.gz"
-        sha256 "d617d0a80bde7a80566bfe99525035951957fa9767000b2bf18cdd80a507d7af"
+        url "https://github.com/jashkahar/open-workbench-platform/releases/download/v0.6.1/om_0.6.1_linux_arm64.tar.gz"
+        sha256 "72cb9f1e6179813a9d0867e536733a1c99452c95f5a936717846f383264a6276"
 
         def install
           bin.install "om"
